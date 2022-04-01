@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.main1 {
+			width: 600px;
+			height: 1300px;
+		}
+		.main2 {
+			width: 600px;
+			height: 1300px;
+			display: none;
+		}
+		.main3 {
+			width: 600px;
+			height: 1300px;
+			display: none;
+		}
+		.main4 {
+			width: 600px;
+			height: 1300px;
+			display: none;
+		}
+		.main5 {
+			width: 600px;
+			height: 1300px;
+			display: none;
+		}
+		.but {
+			width: 600px;
+			height: 100px;
+			color: gray;
+		}
+		.h1 {
+			font-family: arial;
+		}
+		.mauto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img {
+			width: 600px;
+			background-size: 100% 100%;
+		}
+		.txt {
+			font-family: arial;
+			font-size: 20px;
+			color: black;
+		}
+		.win {
+			width: 600px;
+			height: 1300px;
+			background-image: url(win.jpg);
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="main1 mauto">
+		<h1 class="h1">В какой вселенной происходят события Escape from Tarkov?</h1>
+		<img src="1.jpeg" class="img">
+		<button class="but txt w">Вселенная "Метро 2033"</button>
+		<button class="but txt p1">Вселенная "Россия 2028"</button>
+		<button class="but txt w">Вселенная Marvel</button>
+	</div>
+	<div class="main2 mauto">
+		<h1 class="h1">Между какими группировками проходят стычки в Таркове?</h1>
+		<img src="2.jpg" class="img">
+		<button class="but txt p2">Между USEC и BEAR</button>
+		<button class="but txt w">Между USEC и Монолитом</button>
+		<button class="but txt w">Между миротворцами и сепаратистами</button>
+	</div>
+	<div class="main3 mauto">
+		<h1 class="h1">Помимо группировок BEAR и USEC, какие еще есть группировки?</h1>
+		<img src="3.jfif" class="img">
+		<button class="but txt w">Дикие, Рейдеры, сталкеры</button>
+		<button class="but txt p3">Дикие, UNTAR, Рейдеры</button>
+		<button class="but txt w">UNTAR, Рейдеры, сепаратисты</button>
+	</div>
+	<div class="main4 mauto">
+		<h1 class="h1">В каком городе проходят основные боевые действия?</h1>
+		<img src="4.jpg" class="img">
+		<button class="but txt w">Лондон</button>
+		<button class="but txt w2">Москва</button>
+		<button class="but txt p4">Тарков</button>
+	</div>
+	<div class="main5 mauto">
+		<h1 class="h1">Кем являются Дикие?</h1>
+		<img src="5.jpg" class="img">
+		<button class="but txt w">Международные террористы</button>
+		<button class="but txt w">Бывшие военные и оперативники</button>
+		<button class="but txt p5">Жители Таркова</button>
+	</div>
+	<div class="win mauto">
+		<h1 class="h1">Ты победил!</h1>
+	</div>
+<script type="text/javascript">
+	document.querySelector('.p1').onclick = function() {
+		alert('Правильный ответ!')
+		document.querySelector('.main1').style.display = 'none';
+		document.querySelector('.main2').style.display = 'block';
+	}
+	document.querySelector('.p2').onclick = function() {
+		alert('Правильный ответ!');
+		document.querySelector('.main2').style.display = 'none';
+		document.querySelector('.main3').style.display = 'block';
+	}
+	document.querySelector('.p3').onclick = function() {
+		alert('Правильный ответ!');
+		document.querySelector('.main3').style.display = 'none';
+		document.querySelector('.main4').style.display = 'block';
+	}
+	document.querySelector('.p4').onclick = function() {
+		alert('Правильный ответ!');
+		document.querySelector('.main4').style.display = 'none';
+		document.querySelector('.main5').style.display = 'block';
+	}
+	document.querySelector('.p5').onclick = function() {
+		alert('Правильный ответ!');
+		document.querySelector('.main5').style.display = 'none';
+		document.querySelector('.win').style.display = 'block';
+	}
+	document.querySelector('.w').onclick = function() {
+		alert('Неправильный ответ!');
+	}
+</script>
+</body>
+</html>
